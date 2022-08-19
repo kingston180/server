@@ -15,7 +15,7 @@ app.use(express.json())
 dotenv.config({path:'./config.env'})
 require("./Database/connection");
 app.use(require("./auth"))
-const port=5000||process.env.port;
+const port=process.env.port;
 app.listen(port,()=>{
     console.log("Server is running on port no. 3000...")
 })
